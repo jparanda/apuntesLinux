@@ -1,0 +1,238 @@
+ComandosLinux
+
+1.Descomprimir archivo .tar.bz2
+
+tar -xjvf example.tar.bz2
+
+----------------------------------------
+2. Descomprimit archivo .tar.gz, .tgz
+
+tar xzvf archivo.tar.gz
+
+tar -xvzf archivo.tgz
+
+----------------------------------------
+
+3. Comprimir archivos
+
+tar czvf archivo.tar.gz archivo o directorio /archivo/mayo/*
+
+tar czvf isicres_config_siee_05_Dic_2016.tar.gz  isicres/*
+
+---------------------------------------
+4. Buscar palabra en archivo
+
+grep -rnw '/path/to/somewhere/' -e "pattern"
+
+
+---------------------------------------
+
+5. Conocer informacion del disco
+
+df, conocer porcentaje de uso.
+df -a, igual que el anterior
+df -h, formato con lectura para humanos
+
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F76221572C52609D
+
+---------------------------------------
+
+6. Conocer la version linux
+---------------------------
+
+cat /etc/issue
+
+--------------------------------------
+
+7. Conover la version del kernel
+--------------------------------
+
+uname
+
+
+8. Conocer el hardware del equipo
+------------------------------
+
+lshw
+
+lshw -c network
+
+
+8. Changed encofing in files
+----------------------------
+
+Validar la codificaciond el archivo
+
+file -i file.txt
+
+Cambiar la codificacion
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT ift_defcampos.sql -o ift_defcampos.sql_uft8.sql
+
+iconv -f US-ASCII -t UTF-8 03_create_indices_informes.sql -o 03_create_indices_informes.sql_uft8.sql;
+
+
+9. Eliminar una linea de texto en un aarchivo
+---------------------------------------------
+
+cat file_name.txt | awk '{print $1}' > result.txt
+
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.2_insert_data_territorio_isicres.sql -o 03.2_insert_data_territorio_isicres_utf8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.3_insert_data_orgs_isicres.sql -o 03.3_insert_data_orgs_isicres_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.4_insert_data_isicres.sql -o 03.4_insert_data_isicres_utf8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 04.1_insert_clob_isicres.sql -o 04.1_insert_clob_isicres_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 05-sicres3.sql -o 05-sicres3_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.00-fwktd-sir-create.sql -o 07.00-fwktd-sir-create_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.01-fwktd-dir3-insert.sql -o 07.01-fwktd-dir3-insert_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.01-fwktd-sir-insert.sql -o 07.01-fwktd-sir-insert_uft8.sql
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 08.01-fwktd-copia-autentica-insert.sql -o 08.01-fwktd-copia-autentica-insert_uft8.sql
+
+
+Ver paquetes/sofotware instalados en linux
+------------------------------------------
+
+ dpkg-query -W --showformat='${Installed-Size}\t${Package}\n' | sort -nr | less
+
+
+ sudo apt-get remove abiword
+
+
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.2_insert_data_territorio_isicres.sql -o 03.2_insert_data_territorio_isicres_uft8.sql
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.3_insert_data_orgs_isicres.sql -o 03.3_insert_data_orgs_isicres_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 03.4_insert_data_isicres.sql -o 03.4_insert_data_isicres_uft8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 04.1_insert_clob_isicres.sql -o 04.1_insert_clob_isicres_uft8.sql
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 05-sicres3.sql -o 05-sicres3_uft8.sql
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.00-fwktd-sir-create.sql -o 07.00-fwktd-sir-create_utf8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.01-fwktd-dir3-insert.sql -o 07.01-fwktd-dir3-insert_utf8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT 07.01-fwktd-sir-insert.sql -o 07.01-fwktd-sir-insert_utf8.sql
+
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT actualiza_libros.sql -o actualiza_libros_utf8.sql
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT ift_initial_data.sql -o ift_initial_data_utf8.sql
+
+
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT estados_localidades.sql -o estados_localidades_utf8.sql
+iconv -f ISO-8859-1 -t UTF-8//TRANSLIT estructura_organica.sql -o estructura_organica_utf8.sql
+
+
+Conocer el Java vendor de una JVM
+---------------------------------
+
+java -XshowSettings:properties -version
+
+Abrir un jar
+------------
+
+jar xf jar-file
+
+Conover los detos de la CPU
+---------------------------
+
+cat /proc/cpuinfo
+
+
+Copiar directorios
+------------------
+
+cp -avr /home/vivek/letters /usb/backup
+
+Where,
+
+    -a : Preserve the specified attributes such as directory an file mode, ownership, timestamps, if possible additional attributes: context, links, xattr, all.
+    -v : Explain what is being done.
+    -r : Copy directories recursively.
+
+
+
+Reunion Jordi
+-------------
+
+1. NSC: Trabajar en el como para las pruebas de antares con el cliente.
+
+2. VTAE: Asterisk,
+
+
+
+
+OJO, se queda escuchando con el ID_TRANSACCION en Redis.
+
+para *321. DSC, Buzon llamarian al AGI y el AGI el spark,
+
+1. Cargar en un archivo de propiedades los montos
+
+2. Poner un flag para indicar si se valida en el spark o no lo montos.
+
+3. El archivo de consolidacion se usa con el CDR,  hablar con UNAI.
+
+4. Antares, prestamo de saldo vigente llamada por cobrar, payment plugin, Alberto
+
+5. Salgo suficiente Vega
+
+4. BlackList.
+
+Corregir problemas wifi en ubuntu 16.04
+----------------------------------------
+
+
+https://forums.linuxmint.com/viewtopic.php?t=204172
+
+
+Abril un tunel en SSH
+======================
+
+ssh -L local_port:ip_remote:por_remote user_at_server_proxy@ip_server_proxy
+
+ssh -L 8080:172.17.72.202:8181 jaranda@10.255.66.81
+donde:
+
+local_port: puerto en la maquina local(laptop del developer)
+ip_remote: ip del servidor donde esta el servicio
+
+port_remote:puerto por donde escucha el servicio
+
+user_at_server_proxy: Usuario sobre el servidor que se usa de proxy
+
+ip_server_proxy: ip ser servidor proxy(al cual si tenemos acceso)
+
+
+ssh -L 8181:172.17.72.202:8181 jaranda@10.255.66.99
+
+
+curl -i -X POST -H "Content-Type:application/json" http://10.255.66.99:9100/chargingmanager/1.0/doCharge -d '{ "sessionId":"","msisdn":"50258188830","serviceCode":"LxC"}'
+
+
+curl -i -X POST -H "Content-Type:application/json" http://10.255.66.99:9100/chargingmanager/1.0/doRefund -d '{ "sessionId":"","msisdn":"50258188830","serviceCode":"LxC","operationId":"123456789"}'
+
+
+Cambiar el size de una imagen
+-----------------------------
+
+convert myfigure.png -resize 200x100 myfigure.jpg
+
+
+
+Follow the below steps to empty a file:
+Go to command mode in the editor by pressing ESC key on the keyboard.
+Press gg. It will take to the first line of the file.
+Then press dG. This will delete from the first line to the last line.
+
+
+Crear tunel ssh
+===============
+
+ssh -L 9090:172.17.72.244:9090 jaranda@10.255.66.99

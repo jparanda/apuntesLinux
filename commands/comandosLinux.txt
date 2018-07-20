@@ -45,7 +45,7 @@ cat /etc/issue
 
 --------------------------------------
 
-7. Conover la version del kernel
+7. Conocer la version del kernel
 --------------------------------
 
 uname
@@ -89,7 +89,7 @@ Abrir un jar
 
 jar xf jar-file
 
-Conover los detos de la CPU
+Conover los datos de la CPU
 ---------------------------
 
 cat /proc/cpuinfo
